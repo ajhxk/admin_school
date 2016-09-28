@@ -1,0 +1,174 @@
+.authority_search{
+	width: 100%;
+	height: 45px;
+	margin: 0 auto;
+}
+.authority_search .pos-one{
+	float: left;
+	margin: 10px 10px 0 0;
+}
+.common_search{
+	width: 300px;
+	height: 30px;
+	border-radius: 0;
+}
+.common_select{
+	height: 30px;
+	border-radius: 0;
+	background-color: #fff;
+}
+.common_top_select{
+	height: 30px;
+}
+.common_select_type{
+	line-height: 30px;
+}
+.common_input_search{
+	width: 270px;
+	height: 30px;
+	line-height: 30px;
+}
+.common_search_btn{
+	margin-top: 8px;
+}
+.add-teacher-btn{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+}
+.table td li + li{
+	padding-top: 10px;
+}
+.btn_edit{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+    color: #4c4c4c;
+    cursor: pointer;
+    line-height: 30px;
+}
+.btn_edit.edit_class, .btn_edit.edit_teacher{
+	width: 90px;
+}
+.common_search input{
+	margin: 0;
+	padding: 0;
+}
+.common_btn_pic{
+	background-image: url(../../images/common_search.png);
+}
+.wwh-btn.add_class{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+}
+.wwh-btn.save, .wwh-btn.cancel{
+	width: 90px;
+	height: 40px;
+	line-height: 40px;
+}
+.wwh-btn.cancel{
+	background-color: #333;
+}
+.wwh-btn.cancel:hover{
+	background-color: #404040;
+}
+.wwh-btn.search{
+	width: 80px;
+	height: 36px;
+	line-height: 36px;
+}
+.teacher-info-search{
+	margin-top: 20px;
+	border: 1px solid #e3e3e3;
+}
+.teacher-info-search .info-header{
+	width: 100%;
+	height: 36px;
+	background-color: #ccc;
+	text-indent: 20px;
+	line-height: 36px;
+}
+.search-input{
+	border: 1px solid #d9d9d9;
+	text-indent: 10px;
+	color: #999;
+	font-size: 12px;
+}
+.search-input.teacher{
+	width: 400px;
+	height: 36px;
+	margin: 20px 10px 30px 20px;
+	border-radius: 0;
+}
+.teacher-info-search .teacher-info{
+	display: none;
+	width: 400px;
+	height: 112px;
+	margin: 0 0 20px 20px;
+	background-color: #f2f2f2;
+	border: 1px solid #d9d9d9;
+}
+.teacher-info-search .teacher-info div{
+	height: 36px;
+	text-indent: 10px;
+	line-height: 36px;
+	color: #333;
+	font-size: 12px;
+}
+.teacher-info-search .teacher-info div + div{
+	border-top: 1px solid #d9d9d9; 
+}
+.class-info{
+	width: 100%;
+	height: 36px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	background-color: #f2f2f2;
+	border: 1px solid #d9d9d9;
+	color: #333;
+	font-size: 12px;
+	line-height: 36px;
+	text-indent: 20px;
+}
+.class-info span + span{
+	margin-left: 20px;
+}
+.teacher-info-uid{
+	display: none;
+}
+.btn_edit:hover{
+	border: 1px solid #333;
+}
+.btn_edit + .btn_edit{
+	margin-left: 10px;
+}
+.common_search:hover{
+	border: 1px solid #333;
+}
+tr + tr:hover{
+	background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

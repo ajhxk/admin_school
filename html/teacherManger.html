@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>教师管理</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">   <!--强制以最新的ie版本-->
+    <link rel="stylesheet" href="../static/css/common/reset.min.css">
+    <link rel="stylesheet" href="../static/css/main/main.min.css">
+    <link rel="stylesheet" href="../static/css/common/wh.common.min.css">
+    <link rel="stylesheet" href="../static/js/lib/msgbox/msgbox.min.css">
+    <link rel="stylesheet" href="../static/css/page/teacherManger.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="top">
+
+        <span>
+            运动世界场馆管理系统 v1.0
+        </span>
+
+        <div class="amdin">
+            张三，欢迎您
+        </div>
+        <div class="top-icons">
+            <a id="dropdown-toggle" class="dropdown-icon"></a>
+        </div>
+        <ul id="change-login" class="change-login">
+            <li op="logout">切换登录</li>
+            <li op="password">修改密码</li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="left-sidebar">
+            <ul id="accordion" class="accordion">
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" url="" class="left-nav-icon course_set" >学期目标设定</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon teacher_manage current" url="">教师管理</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon student_manage" url="">学生管理</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="right-iframe">
+            <div class="box" id="tab">
+                <div class="tab-box">
+                    <div class="iframe-content">
+                        <div class="breadcrumb_out mt40">
+                            <div class="breadcrumb">
+                                <li>优化教师管理，建立老师与学生的关联，帮助老师更快地找到自己的学生</li>
+                                <div class="area_headbtn">
+                                    <a href="" class="wwh-btn add-teacher-btn">添加教师</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="authority_search">
+                            <!--下拉框-->
+                            <div class="common_select fd-left member_vipmanger_select" style="margin-top: 10px; margin-right: 10px;" id="common_selected">
+                                <div class="common_top_select">
+                                    <span id="cur_activeState" class="common_select_type" data-sid="0">2016秋</span>
+                                    <span class="common_select_img"></span>
+                                </div>
+                                <ul class="common_select_ul" style="">
+                                    <li class="common_select_li" data-sid="0">2016秋</li>
+                                    <li class="common_select_li" data-sid="1">2016夏</li>
+                                    <li class="common_select_li" data-sid="2">2016春</li>
+                                    <li class="common_select_li" data-sid="3">2015秋</li>
+                                    <li class="common_select_li" data-sid="4">2015夏</li>
+                                    <li class="common_select_li" data-sid="5">2015春</li>
+                                </ul>
+                            </div>
+                            
+                            <!--搜索框-->
+                            <div class="common_search fd-clr pos-one">
+                                <input type="text" id="keyword" value="" class="common_input_search" placeholder="请输入教师姓名、手机号、教职工号">
+                                <span id="searchTeacher" class="common_search_btn"></span>
+                            </div>
+                        </div>
+
+                        <div class="table_out" style="margin-top: 15px;">
+                            <table class="table" style="width: 100%;table-layout: fixed;text-align: left;">
+                                <tbody>
+                                    
+                                    <tr style="background-color: #ccc;height: 40px;font-size: 12px;color: #333;">
+                                        <td style="padding-left: 20px; width: 110px;">序号</td>
+                                        <td style="width: 130px;">教师姓名</td>
+                                        <td style="width: 130px;">手机号</td>
+                                        <td style="width: 130px;">教职工号</td>
+                                        <td style="width: 330px;">本学期课程班级</td>
+                                        <td >操作</td>
+                                    </tr>
+
+                                    
+                                    <tr style="border: 1px solid #E3E3E3;font-size: 12px;color: #333; height: 40px;">
+                                        <td style="padding-left: 20px;">01</td>
+                                        <td >赵君羊</td>
+                                        <td>11111111111</td>
+                                        <td class="teacherId">2238457221</td>
+                                        <td style="padding: 15px 0;">
+                                            <ul>
+                                                <li>游泳000000000</li>
+                                                <li>游泳000000000</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <a class="btn_edit edit_teacher">编辑课程班级</a>
+                                            <a class="btn_edit delete_teacher" data-mid="111">删除</a>
+                                        </td>
+                                    </tr>
+                                    <tr style="border: 1px solid #E3E3E3;font-size: 12px;color: #333; height: 40px;">
+                                        <td style="padding-left: 20px;">01</td>
+                                        <td >赵君羊</td>
+                                        <td>11111111111</td>
+                                        <td class="teacherId">2238457221</td>
+                                        <td style="padding: 15px 0;">
+                                            <ul>
+                                                <li>游泳000000000</li>
+                                                <li>游泳000000000</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <a class="btn_edit edit_teacher">编辑课程班级</a>
+                                            <a class="btn_edit delete_teacher" data-mid="111">删除</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>客服电话：400 800 9198</span>
+        <span class="copy-right">Zhe Jiang Wan Hang Information Technology Co.Ltd</span>
+    </div>
+</div>
+</body>
+<script src="../static/js/lib/jquery-2.1.4.min.js"></script>
+<script src="../static/js/main/main.min.js"></script>
+<script src="../static/js/lib/msgbox/msgbox.min.js"></script>
+<script src="../static/js/common/screen&search.js"></script>
+<script src="../static/js/page/teacherManger.js"></script>
+</html>

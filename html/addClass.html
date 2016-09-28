@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>教师管理</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">   <!--强制以最新的ie版本-->
+    <link rel="stylesheet" href="../static/css/common/reset.min.css">
+    <link rel="stylesheet" href="../static/css/main/main.min.css">
+    <link rel="stylesheet" href="../static/css/common/wh.common.min.css">
+    <link rel="stylesheet" href="../static/js/lib/msgbox/msgbox.min.css">
+    <link rel="stylesheet" href="../static/css/page/teacherManger.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="top">
+
+        <span>
+            运动世界场馆管理系统 v1.0
+        </span>
+
+        <div class="amdin">
+            张三，欢迎您
+        </div>
+        <div class="top-icons">
+            <a id="dropdown-toggle" class="dropdown-icon"></a>
+        </div>
+        <ul id="change-login" class="change-login">
+            <li op="logout">切换登录</li>
+            <li op="password">修改密码</li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="left-sidebar">
+            <ul id="accordion" class="accordion">
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" url="" class="left-nav-icon course_set" >学期目标设定</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon current teacher_manage" url="">教师管理</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon student_manage" url="">学生管理</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="right-iframe">
+            <div class="box" id="tab">
+                <div class="tab-box">
+                    <div class="iframe-content">
+
+                        <div class="breadcrumb_out mt40">
+                            <div class="breadcrumb">
+                                <li>优化教师管理，建立老师与学生的关联，帮助老师更快地找到自己的学生</li>
+                                <div class="area_headbtn">
+                                    <a class="wwh-btn add_class">新增课程班级</a>
+                                    <a class="wwh-btn cancel">返回</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="class-info">
+                            <span class="semester">学期：2016年 秋</span>
+                            <span class="teacher-name">姓名：张君羊</span>
+                            <span class="teacher-tel">手机号：11111111111</span>
+                            <span class="teacher-num">教职工号：111111111</span>
+                        </div>
+                        
+                        <div class="table_out">
+                            <table class="table" id="addClassTable" style="width: 100%;table-layout: fixed;text-align: left;">
+
+                                <tr style="background-color: #ccc;height: 40px;font-size: 12px;color: #333;">
+                                    <td style="width: 130px; padding-left: 20px;">序号</td>
+                                    <td style="width: 350px;">课程班级名称</td>
+                                    <td>操作</td>
+                                </tr>
+
+                                <tr style="border: 1px solid #E3E3E3;font-size: 12px;color: #333;">
+                                    <td style="padding-left: 20px;">01</td>
+                                    <td style="padding: 15px 0" class="className">游泳9030021</td>
+                                    <td>
+                                        <a class="btn_edit edit_class" data-cid="111">编辑</a>
+                                        <a class="btn_edit delete_class" data-cid="222">删除</a>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>客服电话：400 800 9198</span>
+        <span class="copy-right">Zhe Jiang Wan Hang Information Technology Co.Ltd</span>
+    </div>
+</div>
+</body>
+<script src="../static/js/lib/jquery-2.1.4.min.js"></script>
+<script src="../static/js/main/main.min.js"></script>
+<script src="../static/js/lib/msgbox/msgbox.min.js"></script>
+<script src="../static/js/common/screen&search.js"></script>
+<script src="../static/js/page/teacherManger.min.js"></script>
+</html>

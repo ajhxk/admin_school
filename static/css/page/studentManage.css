@@ -1,0 +1,134 @@
+#authority{
+    width: 100%;
+    overflow: hidden;
+}
+.authority_search{
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+}
+.authority_search .pos-one{
+    float: left;
+    margin:10px 10px 0 0;
+}
+#authority .table_style tr th:nth-child(1){
+    width: 60px;
+}
+#authority .table_style tr th:nth-child(2){
+    width: 120px;
+}
+#authority .table_style tr th:nth-child(3){
+    width: 60px;
+}
+#authority .table_style tr input{
+    margin-right: 10px;
+}
+.authority_start{
+    color: #03d927;
+}
+.authority_start:hover{
+    color: #59e168;
+}
+.authority_not{
+    color: #ff5858;
+}
+.authority_but{
+    width: 70px;
+    height: 25px;
+    border: 1px solid #e6e6e6;
+    color: #999;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    -webkit-border-radius:3px;
+    background-color: #fff;
+}
+.authority_but:hover{
+    color: #333;
+}
+.authority_but_dele{
+    width: 50px;
+    height: 25px;
+    border: 1px solid #e6e6e6;
+    color: #999;
+    background-color: #fff;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -o-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+.authority_but_dele:hover{
+    color: #333;
+}
+.authority_add{
+    height: 45px;
+    float: right;
+}
+.authority_add input{
+    margin-top: 10px;
+}
+.authority_add input:focus{
+    color: #fff;
+}
+.button_cancle{
+    width: 70px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+}
+.student_manage_search{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.student_manage_search .common_select{
+    background-color: #FFFFFF;
+    margin-right: 10px;
+    border-radius: 0;
+    height: 30px;
+    line-height: 30px;
+    width: 150px;
+}
+.student_manage_search .authority_search{
+    clear:both;
+    height: 30px;
+}
+.student_manage_search .common_top_select{
+    min-height: 30px;
+}
+.student_manage_search .common_select_ul{
+    width: 150px;
+}
+.student_manage_search .common_search{
+    width: 300px;
+    height: 30px;
+    border-radius: 0;
+    border-color: #dddddd;
+    margin-top: 0
+}
+.student_manage_search .common_input_search{
+    width: 270px;
+    color: #A4a2a2;
+    padding-left: 0;
+    margin-right: 0;
+    height: 30px;
+    line-height: 30px;
+}
+.student_manage_search .common_search_btn{
+    margin-top: 6px;
+}
+.student_manage_table.table_out{
+    margin-top: 10px;
+    color: #333333;
+}
+.student_manage_table .table_head{
+    background-color: #e1e1e1;
+}
+.student_manage_table .table{
+    min-width: 986px;
+}
+.student_manage_table .finish{
+    color: #00c18b;
+}
+.hide{
+    display: none!important;
+}

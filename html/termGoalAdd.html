@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">   <!--强制以最新的ie版本-->
+    <link rel="stylesheet" href="../static/css/common/reset.min.css">
+    <link rel="stylesheet" href="../static/css/main/main.min.css">
+    <link rel="stylesheet" href="../static/css/common/wh.common.min.css">
+    <link rel="stylesheet" href="../static/js/lib/msgbox/msgbox.min.css">
+    <link rel="stylesheet" href="../static/css/page/termGoalEdit.min.css">
+    <link rel="stylesheet" href="../static/css/common/form.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="top">
+
+        <span>
+            浙江大学&运动世界场馆管理系统 V1.0
+        </span>
+
+        <div class="amdin">
+            张三，欢迎您
+        </div>
+        <div class="top-icons">
+            <a id="dropdown-toggle" class="dropdown-icon"></a>
+        </div>
+        <ul id="change-login" class="change-login">
+            <li op="logout">切换登录</li>
+            <li op="password">修改密码</li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="left-sidebar">
+            <ul id="accordion" class="accordion">
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" url="" class="left-nav-icon course_set current" >学期目标设定</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon teacher_manage" url="">教师管理</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon student_manage" url="">学生管理</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="right-iframe">
+            <div id="tab" class="box">
+
+                <div class="tab-box">
+                    <div class="iframe_content">
+
+                        <div class="breadcrumb_out mt40">
+                            <div class="breadcrumb">
+                                <li>用于设定校区学期跑步目标,保证学生跑步更加合理</li>
+                                <div class="area_headbtn">
+                                    <a class="wwh-btn wwh-btn-save" id="termGoalSave">保存</a>
+                                    <a class="wwh-btn wwh-btn-cancel" id="termGoalCancel">取消</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="breadcrumb_out mt20">
+                            <div class="breadcrumb breadcrumb_h36 bg_E0E0E0">
+                                <li>学期目标信息</li>
+                            </div>
+                        </div>
+
+                        <form action="" method="post" id="termGoalSave_form" class="form">
+                            <div class="table_form_box" >
+                                <div class="form_item">
+                                    <label class="form_label">学期名称:</label>
+                                    <input type="text" id="termName" class="form_text" placeholder="请填写学期名称">
+                                    <span>必填</span>
+                                    <span id="errorSign_termName" class="errorSign"></span>
+
+                                </div>
+
+                                <div class="form_item timeSelect">
+                                    <label class="form_label">学期时间:</label>
+                                    <input type="text" id="termStartTime" class="form_text" placeholder="请选择学期开始时间"
+                                    readonly onclick="WdatePicker({dateFmt:'yyyy/MM/dd',isShowClear:false})"
+                                    >
+                                    <span class="to">至</span>
+                                    <input type="text" id="termEndTime" class="form_text" placeholder="请选择学期结束时间"
+                                    readonly onclick="WdatePicker({dateFmt:'yyyy/MM/dd',isShowClear:false})"
+                                    >
+                                    <span id="errorSign_termTime" class="errorSign"></span>
+                                </div>
+
+
+                                <div class="form_item">
+                                    <label class="form_label">学期目标:</label>
+                                    <input type="text" id="termTargetBoy" class="form_text" placeholder="请填写男生学期目标">
+                                    <span>公里</span>
+                                    <span id="errorSign_termTargetBoy" class="errorSign"></span>
+
+                                </div>
+
+                                <div class="form_item">
+                                    <label class="form_label">每日目标:</label>
+                                    <input type="text" id="dayTargetBoy" class="form_text" placeholder="请填写男生每日目标">
+                                    <span>公里</span>
+                                    <span id="errorSign_dayTargetBoy" class="errorSign"></span>
+
+                                </div>
+                                <div class="form_item signText"><span>学生(男生)每次的跑步乘积,只有跑步里程达到每次目标才会有效,建议不要超过2公里</span></div>
+
+                                <div class="form_item">
+                                    <label class="form_label">学期目标:</label>
+                                    <input type="text" id="termTargetGirl" class="form_text" placeholder="请填写女生学期目标">
+                                    <span>公里</span>
+                                    <span id="errorSign_termTargetGirl" class="errorSign"></span>
+
+                                </div>
+
+                                <div class="form_item">
+                                    <label class="form_label">每日目标:</label>
+                                    <input type="text" id="dayTargetGirl" class="form_text" placeholder="请填写女生每日目标">
+                                    <span>公里</span>
+                                    <span id="errorSign_dayTargetGirl" class="errorSign"></span>
+
+                                </div>
+                                <div class="form_item signText"><span>学生(女生)每次的跑步乘积,只有跑步里程达到每次目标才会有效,建议不要超过2公里</span></div>
+
+
+                                <div class="form_item">
+                                    <label class="form_label">应用校区:</label>
+
+                                    <div class="termGoal_checkbox">
+                                        <input type="checkbox" class="campusSelect" value="A校区">A校区
+                                    </div>
+
+                                    <div class="termGoal_checkbox">
+                                        <input type="checkbox" class="campusSelect" value="B校区">B校区
+                                    </div>
+
+                                    <div class="termGoal_checkbox">
+                                        <input type="checkbox" class="campusSelect" value="C校区">C校区
+                                    </div>
+
+                                    <input type="text" name="unids" id="unids" >
+                                    <span id="errorSign_campusSelect" class="errorSign"></span>
+
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <span>客服电话：400 800 9198</span>
+        <span class="copy-right">Zhe Jiang Wan Hang Information Technology Co.Ltd</span>
+    </div>
+</div>
+</body>
+
+    <script src="../static/js/lib/jquery-2.1.4.min.js"></script>
+    <script src="../static/js/lib/jquery.cookies.min.js"></script>
+    <script src="../static/js/main/main.min.js"></script>
+    <script src="../static/js/lib/msgbox/msgbox.min.js"></script>
+    <script src="../static/js/common/screen&search.min.js"></script>
+    <script src="../static/js/common/form.min.js"></script>
+    <script src="../static/js/lib/jquery.form.js"></script>
+    <script src="../static/js/common/verification.min.js"></script>
+    <script src="../static/js/lib/My97DatePicker/WdatePicker.js"></script>
+    <script src="../static/js/page/termGoalAdd.min.js"></script>
+
+</html>

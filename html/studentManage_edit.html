@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">   <!--强制以最新的ie版本-->
+    <link rel="stylesheet" href="../static/css/common/reset.min.css">
+    <link rel="stylesheet" href="../static/css/main/main.min.css">
+    <link rel="stylesheet" href="../static/css/common/wh.common.min.css">
+    <link rel="stylesheet" href="../static/js/lib/msgbox/msgbox.min.css">
+    <link rel="stylesheet" href="../static/css/common/form.min.css">
+    <link rel="stylesheet" href="../static/css/page/studentManage.css">
+    <link rel="stylesheet" href="../static/css/page/studentManage_edit.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="top">
+
+        <span>
+            浙江大学&运动世界场馆管理系统 V1.0
+        </span>
+
+        <div class="amdin">
+            张三，欢迎您
+        </div>
+        <div class="top-icons">
+            <a id="dropdown-toggle" class="dropdown-icon"></a>
+        </div>
+        <ul id="change-login" class="change-login">
+            <li op="logout">切换登录</li>
+            <li op="password">修改密码</li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="left-sidebar">
+            <ul id="accordion" class="accordion">
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" url="" class="left-nav-icon  course_set" >
+                            <a>学期目标设定</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon teacher_manage" url="">教师管理</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon student_manage" url="">学生管理</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="right-iframe">
+            <div id="tab" class="box">
+
+                <div class="tab-box">
+                    <div class="iframe_content">
+
+                        <div class="breadcrumb_out mt40">
+                            <div class="breadcrumb">
+                                <li>用于设定校区学期跑步目标，保证学生跑步更加合理</li>
+                                <div class="area_headbtn">
+                                    <a class="wwh-btn wwh-btn-save" id="studentManageSave">保存</a>
+                                    <a class="wwh-btn wwh-btn-cancel" id="studentManageCancel">取消</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="breadcrumb_out mt20">
+                            <div class="breadcrumb breadcrumb_h36 bg_E0E0E0">
+                                <li>学生基本信息</li>
+                            </div>
+                        </div>
+
+                        <form action="" method="post" id="studentEdit_form" class="form">
+                            <div class="table_form_box" >
+                                <div class="form_item">
+                                    <label class="form_label">学生姓名:</label>
+                                    <input type="text" id="studentName" class="form_text" placeholder="请输入学生姓名">
+                                    <span id="errorSign_studentName" class="errorSign"></span>
+                                </div>
+
+                                <div class="form_item ">
+                                    <label class="form_label">手机号码:</label>
+                                    <input type="text" id="phoneNum" class="form_text borderNone" readonly value="13056953347">
+                                </div>
+
+
+                                <div class="form_item">
+                                    <label class="form_label">性别:</label>
+
+                                    <div >
+                                        <div class="common_select fd-left from_select" id="sexType">
+                                            <div class="common_top_select">
+                                                <span class="common_select_type" id="cur_sexType" data-option="1">请选择性别</span>
+                                                <span class="common_select_img"></span>
+                                                <input type="hidden" name="gender" id="genter" value="">
+                                            </div>
+                                            <ul class="common_select_ul from_select" id="chargeTypeList" style="">
+                                                <li class="common_select_li" data-option="1" value="1">男</li>
+                                                <li class="common_select_li" data-option="2" value="0">女</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form_item ">
+                                    <label class="form_label">校园号:</label>
+                                    <input type="text" id="schoolNum" class="form_text" placeholder="请输入校园号">
+                                    <span id="errorSign_schoolNum" class="errorSign"></span>
+                                </div>
+
+
+                                <div class="form_item">
+                                    <label class="form_label">学期校区:</label>
+
+                                    <div >
+                                        <div class="common_select fd-left from_select" id="campus">
+                                            <div class="common_top_select">
+                                                <span class="common_select_type" id="cur_campus" data-option="1">请选择校区</span>
+                                                <span class="common_select_img"></span>
+                                                <input type="hidden" id="unid" name="unid" value="1">
+                                            </div>
+                                            <ul class="common_select_ul from_select" id="campusList" style="">
+                                                <li class="common_select_li" data-option="1">A校区</li>
+                                                <li class="common_select_li" data-option="2">B校区</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <span>客服电话：400 800 9198</span>
+        <span class="copy-right">Zhe Jiang Wan Hang Information Technology Co.Ltd</span>
+    </div>
+</div>
+</body>
+
+    <script src="../static/js/lib/jquery-2.1.4.min.js"></script>
+    <script src="../static/js/main/main.min.js"></script>
+    <script src="../static/js/lib/msgbox/msgbox.min.js"></script>
+    <script src="../static/js/common/screen&search.min.js"></script>
+    <script src="../static/js/common/verification.min.js"></script>
+    <script src="../static/js/page/studentManageEdit.js"></script>
+</html>

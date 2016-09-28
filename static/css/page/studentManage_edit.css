@@ -1,0 +1,43 @@
+#studentEdit_form .form_label{
+    margin-right: 0;
+    margin-top: 10px;
+    width: 70px;
+    height: 15px;
+    line-height: 15px;
+}
+
+#studentEdit_form .form_text{
+    padding-left: 0;
+}
+
+#studentEdit_form input{
+    width: 400px;
+    height: 36px;
+    border-radius: 0;
+}
+.borderNone{
+    border: 1px solid #FFFFFF;
+}
+#studentEdit_form .common_select{
+    width: 400px;
+    height: 36px;
+    border-radius: 0;
+    background-color: #FFFFFF;
+}
+#studentEdit_form .common_top_select{
+    height: 36px;
+    line-height: 36px;
+}
+#studentEdit_form .common_select_ul{
+    width: 400px;
+}
+#studentEdit_form .common_select_img{
+    top: 16px;
+}
+#studentEdit_form .form_item{
+    height: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.mb20{ margin-bottom: 20px }

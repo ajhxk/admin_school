@@ -1,0 +1,32 @@
+.table_content_out{
+    width: 100%;
+}
+.termGoal_checkbox{
+    /*width: 80px;*/
+    float: left;
+    margin-top: 5px;
+    /*margin-left: 5px;*/
+    font-size: 12px;
+    color: #999;
+}
+.termGoal_checkbox + .termGoal_checkbox{
+    margin-left: 15px;
+}
+.termGoal_checkbox input{
+    margin-right: 0;
+    height: 10px;
+}
+#unids{
+    display: none;
+}
+#termGoalSave_form{
+    font-family: "Microsoft Yahei";
+    color: #333333;
+}
+#termGoalSave_form .form_label{
+    font-family: "Microsoft Yahei";
+    color: #333333;
+}
+#termGoalSave_form .form_text{
+    border-radius: 0;
+}

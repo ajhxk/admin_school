@@ -1,0 +1,15 @@
+#student_running .color00c18b{
+    color: #00c18b;
+}
+#student_running li.name{
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 0;
+}
+#student_running .pdl0{padding-left: 0}
+#student_running .breadcrumb li:after{
+    content: '*';
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+.mt10{margin-top: 10px}

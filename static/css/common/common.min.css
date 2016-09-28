@@ -1,0 +1,29 @@
+body{
+	font-family: '微软雅黑';
+	margin: 0;
+	padding: 0;
+}
+input{
+	outline: none;
+}
+input:focus::-webkit-input-placeholder{opacity: 0;}
+input:focus::-moz-placeholder {opacity: 0;}
+input:focus:-ms-input-placeholder {opacity: 0; color: #333;}
+/* ==========
+   工具样式
+   ==========*/
+.bg-00c186{
+	background-color: #00c186;
+}
+.fd-clr:after{
+	display: block;
+	clear: both;
+	height: 0;
+	content: "\0020";
+}
+.login_wrapper{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #404040;
+}

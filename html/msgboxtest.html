@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="../static/js/lib/msgbox/msgbox.min.css" rel="stylesheet">
+    <style>
+        .mb_tit:after{
+            position:absolute;
+            right:0;
+            top:40px;
+            left:20px;
+            content:'';
+            transform:scaleY(.5);
+            background-color: #E0E0E0;
+            height: 1px;
+        }
+        .mb_msg:after{
+            position: absolute;
+            left:20px;
+            right: 0;
+            bottom: 0;
+            content: '';
+            transform: scaleY(.5);
+            background-color: #E0E0E0;
+            height: 1px;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+    <script src="../static/js/lib/jquery-2.1.4.min.js"></script>
+    <script src="../static/js/lib/msgbox/msgbox.min.js"></script>
+<script>
+//    window.Alert('提示::none', 'test');
+//    window.Confirm('学期目标删除::none','删除学期目标后将无法恢复,是否删除此学期目标?','' );
+    window.Show('aaa','<input type="text" placeholder="请输入课程班级名称" class="j-classname show_input"></input>',function(){alert(1)});
+//    window.Box('aa');
+//        window.Modal('aa','<h1>11</h1>');
+
+
+</script>
+
+
+</html>

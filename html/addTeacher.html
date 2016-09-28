@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>教师管理</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">   <!--强制以最新的ie版本-->
+    <link rel="stylesheet" href="../static/css/common/reset.min.css">
+    <link rel="stylesheet" href="../static/css/main/main.min.css">
+    <link rel="stylesheet" href="../static/css/common/wh.common.min.css">
+    <link rel="stylesheet" href="../static/js/lib/msgbox/msgbox.min.css">
+    <link rel="stylesheet" href="../static/css/page/teacherManger.min.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="top">
+
+        <span>
+            运动世界场馆管理系统 v1.0
+        </span>
+
+        <div class="amdin">
+            张三，欢迎您
+        </div>
+        <div class="top-icons">
+            <a id="dropdown-toggle" class="dropdown-icon"></a>
+        </div>
+        <ul id="change-login" class="change-login">
+            <li op="logout">切换登录</li>
+            <li op="password">修改密码</li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="left-sidebar">
+            <ul id="accordion" class="accordion">
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" url="" class="left-nav-icon course_set" >学期目标设定</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon current teacher_manage" url="">教师管理</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon student_manage" url="">学生管理</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="right-iframe">
+            <div class="box" id="tab">
+                <div class="tab-box">
+                    <div class="iframe-content">
+
+                        <div class="breadcrumb_out mt40">
+                            <div class="breadcrumb">
+                                <li>优化教师管理，建立老师与学生的关联，帮助老师更快地找到自己的学生</li>
+                                <div class="area_headbtn">
+                                    <a id="saveTeacher" class="wwh-btn save">保存</a>
+                                    <a class="wwh-btn cancel">取消</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="teacher-info-search">
+                            <div class="info-header">教师信息</div>
+                            <div class="teacher-search">
+                                <input class="search-input teacher" type="text" placeholder="请输入教师手机号">
+                                <a class="wwh-btn search">搜索</a>
+                            </div>
+                            <div class="teacher-info">
+                                <div class="teacher-info-name">教师姓名：<span class="info-name">罗小洞</span></div>
+                                <div class="teacher-info-tel">手机号码：<span class="info-tel">11111111111<span></div>
+                                <div class="teacher-info-num">教职工号：<span class="info-num">223845721</span></div>
+                            </div>
+                            <div class="teacher-info-uid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>客服电话：400 800 9198</span>
+        <span class="copy-right">Zhe Jiang Wan Hang Information Technology Co.Ltd</span>
+    </div>
+</div>
+</body>
+<script src="../static/js/lib/jquery-2.1.4.min.js"></script>
+<script src="../static/js/main/main.min.js"></script>
+<script src="../static/js/lib/msgbox/msgbox.min.js"></script>
+<script src="../static/js/common/screen&search.js"></script>
+<script src="../static/js/page/teacherManger.min.js"></script>
+</html>

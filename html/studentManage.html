@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">   <!--强制以最新的ie版本-->
+    <link rel="stylesheet" href="../static/css/common/reset.min.css">
+    <link rel="stylesheet" href="../static/css/main/main.min.css">
+    <link rel="stylesheet" href="../static/css/common/wh.common.min.css">
+    <link rel="stylesheet" href="../static/js/lib/msgbox/msgbox.min.css">
+    <link rel="stylesheet" href="../static/css/page/termGoalSet.min.css">
+    <link rel="stylesheet" href="../static/css/page/studentManage.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="top">
+
+        <span>
+            浙江大学&运动世界场馆管理系统 V1.0
+        </span>
+
+        <div class="amdin">
+            张三，欢迎您
+        </div>
+        <div class="top-icons">
+            <a id="dropdown-toggle" class="dropdown-icon"></a>
+        </div>
+        <ul id="change-login" class="change-login">
+            <li op="logout">切换登录</li>
+            <li op="password">修改密码</li>
+        </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="left-sidebar">
+            <ul id="accordion" class="accordion">
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" url="" class="left-nav-icon  course_set" >学期目标设定</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon teacher_manage" url="">教师管理</li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <ul class="submenu">
+                        <li id="" class="left-nav-icon student_manage current" url="">学生管理</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="right-iframe">
+            <div id="tab" class="box">
+
+                <div class="tab-box">
+                    <div class="iframe_content">
+
+                        <div class="breadcrumb_out mt40">
+                            <div class="breadcrumb">
+                                <li>优化学生管理，查看学生成绩更加便捷</li>
+                                <div class="area_headbtn">
+                              <!--      <a class="wwh-btn wwh-btn-save" id="termGoalSave">保存</a>-->
+                                    <a class="wwh-btn wwh-btn-cancel" id="termGoalCancel">导出</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="student_manage_search">
+                            <div class="authority_search" >
+
+                            <div class="common_select fd-left " id="semesterSelect">
+                                <div class="common_top_select">
+                                    <span class="common_select_type" id="cur_sid" data-option="0" data-sid="000">请选择学期</span>
+                                    <span class="common_select_img"></span>
+                                </div>
+                                <ul class="common_select_ul" style="display: none;">
+                                    <li class="common_select_li" data-option="0" data-sid="000">请选择学期</li>
+                                    <li class="common_select_li" data-option="1" data-sid="111">春</li>
+                                    <li class="common_select_li" data-option="2" data-sid="222">秋</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="common_select fd-left " id="teacherSelect">
+                                <div class="common_top_select">
+                                    <span class="common_select_type" id="cur_mid" data-option="0" data-mid="000">请选择教师</span>
+                                    <span class="common_select_img"></span>
+                                </div>
+                                <ul class="common_select_ul" style="display: none;">
+                                    <li class="common_select_li" data-option="0" data-mid="000">请选择老师</li>
+                                    <li class="common_select_li" data-option="1" data-mid="111">张三</li>
+                                    <li class="common_select_li" data-option="2" data-mid="222">李四</li>
+                                    <li class="common_select_li" data-option="3" data-mid="333">王五</li>
+                                </ul>
+                            </div>
+
+                            <div class="common_select fd-left " id="courseSelect">
+                                <div class="common_top_select">
+                                    <span class="common_select_type" id="cur_cid" data-option="0" data-cid="000">请选择课程</span>
+                                    <span class="common_select_img"></span>
+                                </div>
+                                <ul class="common_select_ul" style="display: none;">
+                                    <li class="common_select_li" data-option="0" data-cid="000">全部会员卡类型</li>
+                                    <li class="common_select_li" data-option="1" data-cid="111">储值卡</li>
+                                    <li class="common_select_li" data-option="2" data-cid="222">次卡</li>
+                                    <li class="common_select_li" data-option="3" data-cid="333">限时卡</li>
+                                </ul>
+                            </div>
+
+                            <div class="common_search fd-clr pos-one" >
+                                <input id="condition"  value="" class="common_input_search" placeholder="订单编号、姓名关键字、手机号、会员卡号" type="text" >
+                                <span class="common_search_btn common_btn_pic1" id="search_btn_small"></span>
+                            </div>
+
+                            </div>
+                        </div>
+
+                        <div class="breadcrumb_out ">
+                            <div class="breadcrumb">
+                                <li>该筛选条件下合计:</li><li>共****名学生</li>
+                            </div>
+                        </div>
+
+                        <div class="table_out student_manage_table">
+                            <table class="table" >
+                                <tbody>
+                                <tr class="table_head">
+                                    <td style="text-align: center" width="49">序号</td>
+                                    <td style="padding-left: 40px;" width="80">校园号</td>
+                                    <td width="70">姓名</td>
+                                    <td width="70">性别</td>
+                                    <td width="70">教师姓名</td>
+                                    <td width="80">课程</td>
+                                    <td width="70">完成/学期目标</td>
+                                    <td width="180">操作</td>
+                                    <!--<td width="30"></td>-->
+                                </tr>
+
+
+
+                                <tr class="table_line">
+                                    <td style="padding: 13px 0;text-align: center;">01</td>
+                                    <td style="padding: 13px 0px 13px 40px">
+                                        <ul>
+                                            <li>323213213124</li>
+                                        </ul>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li>张国荣</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li>男</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li>黄旭侃</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                         <li>游泳0903222</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li>20/50</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <a class="btn_edit">查看跑步信息</a>
+                                        <a class="btn_del"style="margin-left: 10px">编辑学生信息</a>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="table_line">
+                                    <td style="padding: 13px 0;text-align: center;">01</td>
+                                    <td style="padding: 13px 0px 13px 40px">
+                                        <ul>
+                                            <li>323213213124</li>
+                                        </ul>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li>张国荣</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li>男</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li>黄旭侃</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li>游泳0903222</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <li class="finish">已完成</li>
+                                    </td>
+                                    <td style="padding: 13px 0">
+                                        <a class="btn_edit">查看跑步信息</a>
+                                        <a class="btn_del"style="margin-left: 10px">编辑学生信息</a>
+                                    </td>
+
+                                </tr>
+
+                                </tbody></table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <span>客服电话：400 800 9198</span>
+        <span class="copy-right">Zhe Jiang Wan Hang Information Technology Co.Ltd</span>
+    </div>
+</div>
+</body>
+
+<script src="../static/js/lib/jquery-2.1.4.min.js"></script>
+<script src="../static/js/main/main.min.js"></script>
+<script src="../static/js/lib/msgbox/msgbox.min.js"></script>
+<script src="../static/js/common/screen&search.min.js"></script>
+<script src="../static/js/page/studentManage.js"></script>
+</html>
